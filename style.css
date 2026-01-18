@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* COLOR */
+  --bg-primary: #0b0b0d;
+  --bg-secondary: #121217;
+
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #7a7a7a;
+
+  --accent-primary: #facc15;
+  --accent-secondary: #eab308;
+
+  --border-subtle: #1f1f23;
+  /* TYPOGRAPHY */
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --line-height-headings: 1.1;
+  --line-height-normal: 1.6;
+}
+/* general styling */
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+}
+p {
+    color: var(--text-secondary);
+}
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+img {
+    max-width: 100%;
+}
+i {
+  color: var(--accent-primary);
+}
+/* layouts */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.section-header {
+  font-family: "Bebas Neue", sans-serif;
+}
+.section-secondary-bg {
+    background-color: var(--bg-secondary);
+}
+/* buttons */
+.btn {
+    padding: 1em 2.5em;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+}
+.btn-primary {
+    background-color: var(--accent-primary);
+}
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: --border-subtle 1px solid;
+}
+.highlighted-text {
+    color: var(--accent-primary);
+}
