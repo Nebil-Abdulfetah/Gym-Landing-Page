@@ -1,0 +1,108 @@
+@media (min-width: 800px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header > .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav {
+    visibility: visible;
+    height: auto;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-item + .nav-item {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+  .nav-list-secondary {
+    margin-left: 2rem;
+  }
+  /* Hero section */
+  .hero-section {
+    padding: 0;
+    text-align: left;
+  }
+  .hero-img-container {
+    width: 45%;
+  }
+  .hero-title {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .title-break {
+    display: block;
+  }
+  .hero-status,
+  .hero-description {
+    margin: 0;
+  }
+  .hero-description {
+    margin-bottom: 2rem;
+  }
+  /* Stats section */
+  .section-header {
+    font-size: 3rem;
+  }
+  .stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .stats div {
+    flex-direction: column;
+    border-bottom: 0;
+    margin: 0;
+  }
+  .bordered-item {
+    border-left: var(--border-subtle) 2px solid;
+    border-right: var(--border-subtle) 2px solid;
+    padding-inline: 10em;
+  }
+  /* programs section */
+  .programs, .memberships, .testimonials {
+    padding-block:7rem;
+  }
+  .program-item {
+    width: 30%;
+  }
+  /* membership section */
+  .memberships-list  {
+    flex-wrap: wrap;
+  }
+  .testimonials-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .testimonial {
+    width: 49%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  /* cta */
+  .cta {
+    padding: 8em;
+  }
+  /* footer */
+  .footer-flex  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-description  {
+    width: 250px;
+  }
+  .subscribe-text  {
+    width: 300px;
+  }
+}

@@ -12,35 +12,47 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="logo"><i class="ph-fill ph-barbell"></i>Core Fitness</div>
-        <ul class="nav">
-          <li class="nav-list">
-            <a href="#programs" class="nav-link">Programs</a>
-          </li>
-          <li class="nav-list">
-            <a href="#membership" class="nav-link">Membership</a>
-          </li>
-          <li class="nav-list">
-            <a href="#trainers" class="nav-link">Trainers</a>
-          </li>
-          <li class="nav-list">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <button class="btn btn-primary">Join Now</button>
+        <button class="nav-toggle" aria-label="open navigation">
+          <i class="ph ph-list"></i>
+        </button>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Core Fitness logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav-list nav-list-primary">
+            <li class="nav-item">
+              <a href="#programs" class="nav-link">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#membership" class="nav-link">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trainers" class="nav-link">Trainers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav-list nav-list-secondary">
+            <li class="btn btn-primary nav-item"><a href="#">Join Now</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <section id="hero">
-        <div class="container">
+      <section class="hero-section">
+        <div class="container flex">
           <div>
-            <p><i class="ph-fill ph-dot-outline"></i>Now open 24/7</p>
-            <h1 class="section-header">Forge your <span class="highlighted-text">ultimate</span> physique</h1>
-            <p>
+            <p class="hero-status"><i class="ph-fill ph-dot-outline"></i>Now open 24/7</p>
+            <h1 class=" hero-title">
+              Forge your <br class="title-break"><span class="highlighted-text">ultimate</span><br class="title-break"> physique
+            </h1>
+            <p class="hero-description">
               Join the elite at Core Fitness. Experience raw energy, premium
               equimpent, and a community dedicated to crushing limits.
             </p>
@@ -49,7 +61,7 @@
               <button class="btn btn-secondary">View Programs</button>
             </ul>
           </div>
-          <div>
+          <div class="hero-img-container">
             <img
               src="images/hero.png"
               alt="A big muscled gorilla illustiration"
@@ -57,34 +69,39 @@
           </div>
         </div>
       </section>
-      <section id="stats" class="section-secondary-bg">
+      <section id="stats" class="stats section-secondary-bg">
         <div><span class="highlighted-text">10k+</span>lbs lifted daily</div>
-        <div><span class="highlighted-text">24/7</span>gym access</div>
-        <div><span class="highlighted-text">5.0</span>average member rating</div>
+        <div  class="bordered-item"><span class="highlighted-text">24/7</span>gym access</div>
+        <div>
+          <span class="highlighted-text">5.0</span>average member rating
+        </div>
       </section>
-      <section id="programs">
+      <section id="programs" class="programs">
         <div class="container">
           <h2 class="section-header">Training Programs</h2>
           <p>
             Designed to push your limits and sculpt your body using
             state-of-the-art techniques.
           </p>
-          <ul>
-            <li>
+          <ul class="programs-list flex">
+            <li class="program-item">
+              <i class="ph-fill ph-barbell"></i>
               <h3>Strength Training</h3>
               <p>
                 Build raw power with our elite lifting equipment, olympic
                 platforms, and expensive free weights area.
               </p>
             </li>
-            <li>
+            <li class="program-item">
+              <i class="ph-fill ph-lightning"></i>
               <h3>HIIT Circuit</h3>
               <p>
                 High-intensity interval training designed to torch calories,
                 boost endurance, and improve cardiovascular health.
               </p>
             </li>
-            <li>
+            <li class="program-item">
+              <i class="ph-fill ph-user"></i>
               <h3>Personal Coaching</h3>
               <p>
                 One-on-one guidance from expert trainers to smash your specific
@@ -94,53 +111,53 @@
           </ul>
         </div>
       </section>
-      <section id="membership" class="section-secondary-bg">
+      <section id="membership" class="section-secondary-bg memberships">
         <div class="container">
           <h2 class="section-header">Membership Plans</h2>
-          <p>No hidden fees. No contracts. Just results.</p>
-          <ul>
-            <li>
+          <p class="section-description">No hidden fees. No contracts. Just results.</p>
+          <ul class="memberships-list flex">
+            <li class="membership-item">
               <h3>Basic</h3>
               <p><span>$49</span>/mo</p>
               <button>Select Basic</button>
-              <ul>
-                <li>Access to gym floor</li>
-                <li>Locker room access</li>
-                <li>Free WiFi</li>
+              <ul class="membership-features-list">
+                <li><i class="ph-fill ph-check-circle"></i> Access to gym floor</li>
+                <li><i class="ph-fill ph-check-circle"></i> Locker room access</li>
+                <li><i class="ph-fill ph-check-circle"></i> Free WiFi</li>
               </ul>
             </li>
 
-            <li>
+            <li class="membership-item recommended-membership">
               <h3>core</h3>
               <p><span>$89</span>/mo</p>
               <button>Select Core</button>
-              <ul>
-                <li>All Basic features</li>
-                <li>Unlimited classes</li>
-                <li>Sauna & Stream rooms</li>
-                <li>1 Guest pass / month</li>
+              <ul class="membership-features-list">
+                <li><i class="ph-fill ph-check-circle"></i> All Basic features</li>
+                <li><i class="ph-fill ph-check-circle"></i> Unlimited classes</li>
+                <li><i class="ph-fill ph-check-circle"></i> Sauna & Stream rooms</li>
+                <li><i class="ph-fill ph-check-circle"></i> 1 Guest pass / month</li>
               </ul>
             </li>
 
-            <li>
+            <li class="membership-item">
               <h3>Elite</h3>
               <p><span>$149</span>/mo</p>
               <button>Select Elite</button>
-              <ul>
-                <li>All Core features</li>
-                <li>2 Personal Training sessions</li>
-                <li>Custom Nutrition plan</li>
-                <li>Priority support</li>
+              <ul class="membership-features-list">
+                <li><i class="ph-fill ph-check-circle"></i> All Core features</li>
+                <li><i class="ph-fill ph-check-circle"></i> 2 Personal Training sessions</li>
+                <li><i class="ph-fill ph-check-circle"></i> Custom Nutrition plan</li>
+                <li><i class="ph-fill ph-check-circle"></i> Priority support</li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
-      <section id="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="container">
           <h2 class="section-header">Success Stories</h2>
-          <ul>
-            <li>
+          <ul class="testimonials-list">
+            <li class="testimonial">
               <div>
                 <img src="" alt="" />
                 <div>
@@ -159,7 +176,43 @@
                 gritty, real, but incredibly supportive."
               </p>
             </li>
-            <li>
+            <li class="testimonial">
+              <div>
+                <img src="" alt="" />
+                <div>
+                  <h3>Alex Ravera</h3>
+                  <p>
+                    <i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i>
+                  </p>
+                </div>
+              </div>
+              <p>
+                "Best equipment in the city. The trainers actually are about your progress and the community vibe is legit."
+              </p>
+            </li>
+            <li class="testimonial">
+              <div>
+                <img src="" alt="" />
+                <div>
+                  <h3>Marcus Chen</h3>
+                  <p>
+                    <i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i
+                    ><i class="ph-fill ph-star"></i>
+                  </p>
+                </div>
+              </div>
+              <p>
+                "Love the 24/7 access. I work late shifts, so coming in at 2 AM and having a safe, clean place to lift is huge."
+              </p>
+            </li>
+             <li class="testimonial">
               <div>
                 <img src="" alt="" />
                 <div>
@@ -178,11 +231,11 @@
                 gritty, real, but incredibly supportive."
               </p>
             </li>
-            <li>
+            <li class="testimonial">
               <div>
                 <img src="" alt="" />
                 <div>
-                  <h3>Sarah Jenkins</h3>
+                  <h3>Alex Ravera</h3>
                   <p>
                     <i class="ph-fill ph-star"></i
                     ><i class="ph-fill ph-star"></i
@@ -193,15 +246,14 @@
                 </div>
               </div>
               <p>
-                "Core Fitness changed my life. The atmosphere is unmatched-it's
-                gritty, real, but incredibly supportive."
+                "Best equipment in the city. The trainers actually are about your progress and the community vibe is legit."
               </p>
             </li>
-            <li>
+            <li class="testimonial">
               <div>
                 <img src="" alt="" />
                 <div>
-                  <h3>Sarah Jenkins</h3>
+                  <h3>Marcus Chen</h3>
                   <p>
                     <i class="ph-fill ph-star"></i
                     ><i class="ph-fill ph-star"></i
@@ -212,64 +264,44 @@
                 </div>
               </div>
               <p>
-                "Core Fitness changed my life. The atmosphere is unmatched-it's
-                gritty, real, but incredibly supportive."
-              </p>
-            </li>
-            <li>
-              <div>
-                <img src="" alt="" />
-                <div>
-                  <h3>Sarah Jenkins</h3>
-                  <p>
-                    <i class="ph-fill ph-star"></i
-                    ><i class="ph-fill ph-star"></i
-                    ><i class="ph-fill ph-star"></i
-                    ><i class="ph-fill ph-star"></i
-                    ><i class="ph-fill ph-star"></i>
-                  </p>
-                </div>
-              </div>
-              <p>
-                "Core Fitness changed my life. The atmosphere is unmatched-it's
-                gritty, real, but incredibly supportive."
+                "Love the 24/7 access. I work late shifts, so coming in at 2 AM and having a safe, clean place to lift is huge."
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section id="call-to-action">
+      <section id="call-to-action" class="cta">
         <div class="container">
           <h2 class="section-header">Ready to crush your goals?</h2>
-          <p>
+          <p class="cta-text">
             Your first session on us. Signup today and get a complimentary
             personal training consultation.
           </p>
-          <ul>
-            <li><a href="#">Get Started Now</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <ul class="cta-btn-list">
+            <li class="cta-btn"><a href="#">Get Started Now</a></li>
+            <li class="cta-btn btn-inverted"><a href="#">Contact Us</a></li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <div>
+        <div class="footer-flex">
           <div>
             <h3>Core Fitness</h3>
-            <p>
+            <p class="footer-description">
               The premier destination for serious fitness enthusiasts. We
               provide the tools, you bring the sweat
             </p>
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">X</a></li>
+            <ul class="social-links-list">
+              <li class="social-link"><a href=""><i class="ph-fill ph-instagram-logo"></i></a></li>
+              <li class="social-link"><a href=""><i class="ph-fill ph-facebook-logo"></i></a></li>
+              <li class="social-link"><a href=""><i class="ph-fill ph-x-logo"></i></a></li>
             </ul>
           </div>
           <div>
             <h3>Quick Links</h3>
-            <ul>
+            <ul class="footer-nav">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Programs</a></li>
               <li><a href="#">Trainers</a></li>
@@ -279,28 +311,28 @@
           </div>
           <div>
             <h3>Contact</h3>
-            <ul>
+            <ul class="contacts-list">
               <li>
-                <p>123 Fitness bldg, Muscle City, CA</p>
+                <i class="ph-fill ph-map-pin-line"></i> 123 Fitness bldg, Muscle City, CA
               </li>
               <li>
-                <p>(555) 123-4567</p>
+                <i class="ph-fill ph-phone"></i> (555) 123-4567
               </li>
               <li>
-                <p>info@corefitness.com</p>
+                <i class="ph ph-globe"></i> info@corefitness.com
               </li>
             </ul>
           </div>
           <div>
             <h3>Stay Updated</h3>
-            <p>Subscribe for tips, news, and exclusive offers.</p>
-            <input type="text" placeholder="Enter your email" />
-            <input type="button" value="Subscribe" />
+            <p class="subscribe-text">Subscribe for tips, news, and exclusive offers.</p>
+            <input type="text" placeholder="Enter your email" class="email-input"/>
+            <input type="button" value="Subscribe" class="subscribe-btn" />
           </div>
         </div>
         <div>
-          <p>&copy; Core Fitness. All rights reserved.</p>
-          <div>
+          <p class="copyright">&copy; Core Fitness. All rights reserved.</p>
+          <div class="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
           </div>
@@ -309,5 +341,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <script src="script.js"></script>
   </body>
 </html>
