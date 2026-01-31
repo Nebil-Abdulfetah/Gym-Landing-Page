@@ -16,8 +16,6 @@
   /* TYPOGRAPHY */
   --font-heading: "Bebas Neue", sans-serif;
   --font-body: "Inter", sans-serif;
-  --line-height-headings: 1.1;
-  --line-height-normal: 1.6;
 
   --border-sm: 10px;
 }
@@ -186,10 +184,10 @@ section {
   margin-inline: auto;
   width: 85%;
 }
-button + button {
-  margin-left: 1rem;
+.hero-btn-list li{
+  display: inline-block;
+  margin-right: 1rem;
 }
-
 /* stats section */
 .stats {
   display: flex;
@@ -391,3 +389,6 @@ footer {
 .legal-links a:hover {
   text-decoration: underline;
 }
+
+
+
